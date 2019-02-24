@@ -4,7 +4,7 @@ pipleline {
      stage ('Build') {
        steps {
           echo 'Runing Build Automation'
-          sh './gradlew build --no-daemn'
+          sh './gradlew build --no-daemon'
           archiveArtifacts artifacts: 'dist/trainSchedule.zip'
       }
     }
